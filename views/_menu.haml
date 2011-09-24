@@ -1,0 +1,14 @@
+#menu
+  %ul#navigation.nav.wrap.sf-js-enabled
+    %li.page_item.current_page_item.first
+      %a{:href => "#"}
+        %span Residential
+      #submenu
+        %ul
+          %li
+            %a#res_existing.on{:href => "#"} Existing
+          %li
+            %a#res_new.off{:href => "#"} New
+    %li.page_item.right
+      %a.sf-with-ul{:href => "#", :title => "Non-Residential"}
+        %span Non-Residential

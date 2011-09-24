@@ -1,0 +1,17 @@
+/ - Section Starts
+
+.post.wrap
+  .post-meta.left-col
+    - if title.length < 14 then
+      %h3.wrap
+      %p(style="line-height: 50px;")= title
+    - else
+      %h3.wrap= title
+
+    - if stringency == "Mandatory"
+      %h4= "#{stringency}"
+      
+  .post-content.right-col
+    = partial :"#{content[:tmpl]}", content[:params]
+      
+/ - Section Ends
